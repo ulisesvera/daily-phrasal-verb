@@ -14,4 +14,7 @@ def getRandomVerb():
         randomPosition = random.randint(0,len(phrasalVerbs))
 
     # Now, we have the choosen item
+    print("Content-Type: javascript/json")
     print(phrasalVerbs[randomPosition])
+
+#getRandomVerb()
