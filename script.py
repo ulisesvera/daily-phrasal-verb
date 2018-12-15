@@ -8,7 +8,7 @@ import cgitb
 cgitb.enable()
 #import web
 
-def getRandomVerb():
+def getRandomVerb(a,b):
     try:
         # We get the json file content (phrasal verbs)
         with open('phrasal_verbs.json') as dataFile:
@@ -27,4 +27,4 @@ def getRandomVerb():
     except ValueError:
         print("Ups, there is an error: ",ValueError)
 
-getRandomVerb()
+#getRandomVerb()
