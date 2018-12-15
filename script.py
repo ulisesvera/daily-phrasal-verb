@@ -3,9 +3,12 @@
 import json 
 from pprint  import pprint
 import random
+import cgitb
+
+cgitb.enable()
 #import web
 
-def getRandomVerb(self,request):
+def getRandomVerb():
     try:
         # We get the json file content (phrasal verbs)
         with open('phrasal_verbs.json') as dataFile:
@@ -17,11 +20,11 @@ def getRandomVerb(self,request):
         randomPosition = random.randint(0,len(phrasalVerbs))
 
         # Now, we have the choosen item
-        print("Content-Type: javascript/json")
+        #print("Content-Type: javascript/json")
         print(phrasalVerbs[randomPosition])
         #web.header('Content-Type', 'application/json')
         return json.dumps(phrasalVerbs[randomPosition])
     except ValueError:
         print("Ups, there is an error: ",ValueError)
 
-#getRandomVerb()
+getRandomVerb()
