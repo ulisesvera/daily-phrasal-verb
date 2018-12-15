@@ -3,7 +3,7 @@
 import json 
 from pprint  import pprint
 import random
-import web
+#import web
 
 def getRandomVerb(self,request):
     try:
@@ -19,7 +19,7 @@ def getRandomVerb(self,request):
         # Now, we have the choosen item
         print("Content-Type: javascript/json")
         print(phrasalVerbs[randomPosition])
-        web.header('Content-Type', 'application/json')
+        #web.header('Content-Type', 'application/json')
         return json.dumps(phrasalVerbs[randomPosition])
     except ValueError:
         print("Ups, there is an error: ",ValueError)
