@@ -17,4 +17,4 @@ def getRandomVerb():
     print("Content-Type: javascript/json")
     print(phrasalVerbs[randomPosition])
 
-getRandomVerb()
+#getRandomVerb()
