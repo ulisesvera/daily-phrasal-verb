@@ -1,2 +1,2 @@
 # daily-phrasal-verb
-Devuelve un "phrasal verb" cada día con su traducción en español.
+Simple python script to get a daily random "phrasal verb" with its definition and example.
