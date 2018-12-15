@@ -1,1 +1,1 @@
-web: gunicorn script:getRandomVerb
+web: gunicorn script:app
