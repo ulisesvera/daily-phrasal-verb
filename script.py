@@ -4,7 +4,7 @@ import json
 from pprint  import pprint
 import random
 
-def getRandomVerb():
+def getRandomVerb(a,b):
     # We get the json file content (phrasal verbs)
     with open('phrasal_verbs.json') as dataFile:
         phrasalVerbs = json.load(dataFile)
